@@ -10,7 +10,7 @@ import { Toaster } from "@/components/ui/toaster"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
+    <main className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 overflow-x-hidden">
       <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] pointer-events-none"></div>
       <div className="absolute top-0 inset-x-0 h-40 bg-gradient-to-b from-indigo-50/70 to-transparent pointer-events-none"></div>
       <Toaster />
