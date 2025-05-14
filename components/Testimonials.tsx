@@ -35,30 +35,30 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    name: "Marco Bianchi",
+    name: "Sofia Romano",
     role: "Studente",
-    company: "Università di Milano",
+    company: "Università La Sapienza",
     image: "/placeholder.svg?height=80&width=80",
     content:
-      "AudioPDF ha rivoluzionato il mio modo di studiare. Ora posso ascoltare i miei appunti mentre sono in palestra o in viaggio. Il risparmio di tempo è incredibile!",
+      "Uso AudioPDF per ripassare gli appunti delle lezioni mentre vado all'università o quando faccio una pausa. Mi aiuta a sfruttare meglio il tempo, anche se a volte devo riascoltare i passaggi più tecnici. Comunque utile.",
     rating: 5,
   },
   {
-    name: "Laura Rossi",
+    name: "Davide Esposito",
     role: "Content Manager",
-    company: "Digital Media Group",
+    company: "Creative Web Solutions",
     image: "/placeholder.svg?height=80&width=80",
     content:
-      "Utilizzo AudioPDF quotidianamente per convertire report e documenti. La qualità dell'audio è eccellente e l'interfaccia è intuitiva. Un servizio che consiglio vivamente.",
+      "AudioPDF è diventato uno strumento fisso nel mio workflow per trasformare lunghi report in audio. La qualità della voce sintetica è buona, e l'upload dei file è semplice. Mi fa risparmiare tempo quando devo rivedere molti documenti.",
     rating: 5,
   },
   {
-    name: "Alessandro Verdi",
+    name: "Elena Moretti",
     role: "Imprenditore",
-    company: "Tech Solutions",
+    company: "Innovatech Srl",
     image: "/placeholder.svg?height=80&width=80",
     content:
-      "Come imprenditore sempre in movimento, AudioPDF mi permette di rimanere aggiornato sui documenti importanti anche quando non posso leggerli. Servizio impeccabile!",
+      "Gestendo un'azienda, ho spesso poco tempo per leggere. AudioPDF mi dà la possibilità di ascoltare contratti o proposte mentre mi sposto tra un appuntamento e l'altro. Non sostituisce una lettura attenta per i dettagli cruciali, ma è ottimo per una prima revisione.",
     rating: 4,
   },
 ]

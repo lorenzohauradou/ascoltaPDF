@@ -90,7 +90,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-slate-800 text-sm text-slate-500 flex flex-col md:flex-row justify-between items-center">
           <p>© {new Date().getFullYear()} AudioPDF. Tutti i diritti riservati.</p>
-          <div className="mt-4 md:mt-0">Made with ❤️ in Italia</div>
+          <div className="mt-4 md:mt-0">Made with ❤️</div>
         </div>
       </div>
     </footer>

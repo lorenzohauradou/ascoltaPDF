@@ -23,7 +23,7 @@ export default function Header() {
           </div>
           <div>
             <span className="text-xl font-bold text-slate-800 tracking-tight">
-              Audio<span className="text-indigo-600">PDF</span>
+              Ascolta<span className="text-indigo-600">PDF</span>
             </span>
             <div className="text-[10px] font-medium text-slate-500 -mt-1 tracking-wide uppercase">
               Ascolta i tuoi documenti
