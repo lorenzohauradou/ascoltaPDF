@@ -4,6 +4,7 @@ import Hero from "@/components/Hero"
 import FileUploader from "@/components/FileUploader"
 import Testimonials from "@/components/Testimonials"
 import FAQ from "@/components/FAQ"
+import Pricing from "@/components/Pricing"
 import Footer from "@/components/Footer"
 import { Toaster } from "@/components/ui/toaster"
 
@@ -21,6 +22,7 @@ export default function Home() {
         </Suspense>
         <Testimonials />
         <FAQ />
+        <Pricing />
       </div>
       <Footer />
     </main>
