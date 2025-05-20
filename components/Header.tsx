@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { Sparkles } from "lucide-react"
 
 export default function Header() {
   return (
@@ -31,13 +32,18 @@ export default function Header() {
           </div>
         </Link>
 
-        <div className="hidden md:flex space-x-1">
-          <button className="px-3 py-1.5 text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">
+        <div className="hidden md:flex space-x-1 items-center">
+          <Link href="#how-it-works" className="px-3 py-1.5 text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">
             Come Funziona
-          </button>
-          <button className="px-3 py-1.5 text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">
-            Prezzi
-          </button>
+          </Link>
+          <a 
+            href="https://appuntoai.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="px-3 py-1.5 text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors inline-flex items-center"
+          >
+            Funzionalità Avanzate <Sparkles className="w-3.5 h-3.5 ml-1.5 text-indigo-400" />
+          </a>
           <button className="px-4 py-1.5 text-sm font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700 transition-colors shadow-sm">
             Accedi
           </button>

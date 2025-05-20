@@ -4,7 +4,7 @@ import type React from "react"
 
 import { useState, useRef } from "react"
 import { useToast } from "@/components/ui/use-toast"
-import { Upload, FileText, AlertCircle, CheckCircle2 } from "lucide-react"
+import { Upload, FileText, AlertCircle, CheckCircle2, Sparkles } from "lucide-react"
 import AudioPlayer from "./AudioPlayer"
 import ProcessingStatus from "./ProcessingStatus"
 
@@ -147,6 +147,26 @@ export default function FileUploader() {
     return (
       <div className="mt-8">
         <AudioPlayer audioUrl={audioUrl} fileName={file?.name || "Audio convertito"} />
+        
+        {/* CTA per AppuntoAI */}
+        <div className="mt-10 p-6 bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50 rounded-xl shadow-md border border-slate-200 text-center">
+          <h3 className="text-xl font-semibold text-slate-800 mb-3">
+            Porta la tua esperienza audio al livello successivo!
+          </h3>
+          <p className="text-slate-600 mb-5 max-w-lg mx-auto">
+            Cerchi voci ultra-realistiche, opzioni di personalizzazione avanzate, limiti più alti o integrazioni API? Scopri tutte le funzionalità Pro su <span className="font-semibold">AppuntoAI</span>.
+          </p>
+          <a
+            href="https://appuntoai.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-7 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white rounded-lg font-semibold text-md shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-75 group"
+          >
+            <Sparkles className="w-5 h-5 mr-2.5 text-yellow-300 group-hover:text-yellow-200 transition-colors" />
+            Scopri AppuntoAI Pro
+          </a>
+        </div>
+
         <div className="mt-8 text-center">
           <button
             onClick={resetState}

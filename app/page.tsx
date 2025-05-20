@@ -4,9 +4,11 @@ import Hero from "@/components/Hero"
 import FileUploader from "@/components/FileUploader"
 import Testimonials from "@/components/Testimonials"
 import FAQ from "@/components/FAQ"
-import Pricing from "@/components/Pricing"
 import Footer from "@/components/Footer"
+import Sidebar from "@/components/Sidebar"
 import { Toaster } from "@/components/ui/toaster"
+
+import { Analytics } from "@vercel/analytics/next"
 
 export default function Home() {
   return (
@@ -15,6 +17,7 @@ export default function Home() {
       <div className="absolute top-0 inset-x-0 h-40 bg-gradient-to-b from-indigo-50/70 to-transparent pointer-events-none"></div>
       <Toaster />
       <Header />
+      <Sidebar />
       <div className="container mx-auto px-4 py-12 max-w-5xl relative">
         <Hero />
         <Suspense fallback={<div className="h-96 flex items-center justify-center">Caricamento...</div>}>
@@ -22,9 +25,10 @@ export default function Home() {
         </Suspense>
         <Testimonials />
         <FAQ />
-        <Pricing />
+        {/* <Pricing /> */}
       </div>
       <Footer />
+      <Analytics />
     </main>
   )
 }
